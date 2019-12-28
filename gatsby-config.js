@@ -69,9 +69,6 @@ module.exports = {
       resolve: `gatsby-plugin-robots-txt`,
     },
     {
-      resolve: `gatsby-plugin-preload-link-crossorigin`,
-    },
-    {
       resolve: `gatsby-plugin-offline`,
     },
   ],
