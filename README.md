@@ -2,7 +2,7 @@
 
 _**Starter for Gatsby with Material-UI, Typescript, Internationalisation and Audit Lighthouse 100%!**_
 
-![Lighthouse](./screenshots/iblis-gatsby-starter.png)
+![Lighthouse](./screenshots/iblis-gatsby-starter.gif)
 
 ## Demos
 
