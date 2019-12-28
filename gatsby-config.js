@@ -53,6 +53,7 @@ module.exports = {
         background_color: '#fafafa',
         theme_color: '#1a73e8',
         icon: `src/images/gatsby-icon.png`,
+        crossOrigin: `use-credentials`,
         localize: [
           {
             start_url: `/iblis-gatsby-starter/fr/`,
