@@ -28,6 +28,7 @@
     "gatsby-plugin-intl": "latest",
     "gatsby-plugin-manifest": "latest",
     "gatsby-plugin-offline": "latest",
+    "gatsby-plugin-preload-link-crossorigin": "latest",
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-robots-txt": "latest",
     "gatsby-plugin-sharp": "latest",

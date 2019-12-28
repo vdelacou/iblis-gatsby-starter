@@ -48,14 +48,15 @@ module.exports = {
         short_name: `Iblis`,
         description: `Template Starter for Gatsby`,
         lang: `en`,
-        start_url: '/',
+        start_url: '/iblis-gatsby-starter/',
         display: 'standalone',
         background_color: '#fafafa',
         theme_color: '#1a73e8',
         icon: `src/images/gatsby-icon.png`,
+        crossOrigin: `anonymous`,
         localize: [
           {
-            start_url: `/fr/`,
+            start_url: `/iblis-gatsby-starter/fr/`,
             lang: `fr`,
             name: `Modèle pour démarrer avec Gatsby`,
             short_name: `Iblis`,
@@ -66,6 +67,9 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-robots-txt`,
+    },
+    {
+      resolve: `gatsby-plugin-preload-link-crossorigin`,
     },
     {
       resolve: `gatsby-plugin-offline`,
