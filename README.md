@@ -49,7 +49,7 @@ npm run build
 ```sh
 npm install
 rm -rvf public/* docs/* .cache/*
-gatsby build --prefix-paths /iblis-gatsby-starter
+gatsby build --prefix-paths
 mv public/* docs/
 ```
 
@@ -61,7 +61,7 @@ mv public/* docs/
 
 ## Todo
 
-- There is always room to improve
+- There is always room to improve :)
 
 ## Known issues
 

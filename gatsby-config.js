@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/iblis-gatsby-starter`,
   plugins: [
     {
       resolve: 'gatsby-plugin-typescript',
