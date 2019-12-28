@@ -1,0 +1,55 @@
+{
+  "name": "iblis-gatsby-starter",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "gatsby": "latest",
+    "iblis-react-undraw": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-helmet": "latest",
+    "styled-components": "latest"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "lint": "tslint src/**/*.ts* --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-helmet": "latest",
+    "@types/styled-components": "latest",
+    "gatsby-image": "latest",
+    "gatsby-plugin-i18n": "latest",
+    "gatsby-plugin-intl": "latest",
+    "gatsby-plugin-manifest": "latest",
+    "gatsby-plugin-offline": "latest",
+    "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-robots-txt": "latest",
+    "gatsby-plugin-sharp": "latest",
+    "gatsby-plugin-sitemap": "latest",
+    "gatsby-plugin-typescript": "latest",
+    "gatsby-source-filesystem": "latest",
+    "gatsby-theme-material-ui": "latest",
+    "gatsby-transformer-sharp": "latest",
+    "husky": "latest",
+    "tslint": "latest",
+    "tslint-config-prettier": "latest",
+    "tslint-config-standard": "latest",
+    "tslint-etc": "latest",
+    "tslint-react": "latest",
+    "tslint-react-hooks": "latest",
+    "tsutils": "latest",
+    "typescript": "latest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  }
+}
