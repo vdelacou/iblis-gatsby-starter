@@ -48,7 +48,7 @@ module.exports = {
         short_name: `Iblis`,
         description: `Template Starter for Gatsby`,
         lang: `en`,
-        start_url: '/iblis-gatsby-starter/',
+        start_url: '/iblis-gatsby-starter/en/',
         display: 'standalone',
         background_color: '#fafafa',
         theme_color: '#1a73e8',
