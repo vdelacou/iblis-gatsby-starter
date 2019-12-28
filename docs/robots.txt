@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://vdelacou.github.io/sitemap.xml
-Host: https://vdelacou.github.io

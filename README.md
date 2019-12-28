@@ -44,6 +44,15 @@ npm install
 npm run build
 ```
 
+## How to build for the github demo
+
+```sh
+npm install
+rm -rvf public/* docs/* .cache/*
+gatsby build --prefix-paths /iblis-gatsby-starter
+mv public/* docs/
+```
+
 ## Contribute
 
 1.  [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device
@@ -52,7 +61,7 @@ npm run build
 
 ## Todo
 
-- (Always let space for improvement)
+- There is always room to improve
 
 ## Known issues
 
@@ -60,9 +69,8 @@ npm run build
 
 ## Thanks
 
-- [Gatsby](https://www.gatsbyjs.org) for make so easy to deploy static site and finally get read of wordpress
+- [Gatsby](https://www.gatsbyjs.org) for make so easy to deploy static site and finally get rid of wordpress
 - [Material-UI](https://material-ui.com/) for the fantastic work
-- [Formik](https://jaredpalmer.com/formik/) for make the form so easy to control
 
 ## License
 
