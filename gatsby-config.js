@@ -80,6 +80,6 @@ module.exports = {
   ],
   pathPrefix: process.env.PATH_PREFIX || `/iblis-gatsby-starter`,
   siteMetadata: {
-    siteUrl: process.env.SITE_URL || `https://vdelacou.github.io/iblis-gatsby-starter/`,
+    siteUrl: process.env.SITE_URL || `https://vdelacou.github.io/iblis-gatsby-starter`,
   },
 };

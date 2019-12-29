@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
 interface ISiteMetadata {
-  siteUrl: string;
+  origin: string;
 }
 
 export const useSiteMetadata = (): ISiteMetadata => {
@@ -16,5 +16,6 @@ export const useSiteMetadata = (): ISiteMetadata => {
       }
     `
   );
-  return site.siteMetadata;
+  const siteUrl = new URL(site.siteMetadata.siteUrl);
+  return { origin: siteUrl.origin };
 };
