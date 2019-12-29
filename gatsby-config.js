@@ -23,6 +23,13 @@ module.exports = {
       resolve: 'gatsby-plugin-react-helmet',
     },
     {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: '#1a73e8',
+        showSpinner: false,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

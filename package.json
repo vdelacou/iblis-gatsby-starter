@@ -27,6 +27,7 @@
     "gatsby-plugin-i18n": "latest",
     "gatsby-plugin-intl": "latest",
     "gatsby-plugin-manifest": "latest",
+    "gatsby-plugin-nprogress": "latest",
     "gatsby-plugin-offline": "latest",
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-robots-txt": "latest",
