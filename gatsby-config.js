@@ -1,3 +1,6 @@
+const pathPrefix = process.env.PATH_PREFIX || ``;
+const siteUrl=  process.env.SITE_URL || `https://www.example.com`;
+
 module.exports = {
   plugins: [
     {
@@ -54,7 +57,7 @@ module.exports = {
         short_name: `Iblis`,
         description: `Template Starter for Gatsby`,
         lang: `en`,
-        start_url: '/iblis-gatsby-starter/en/',
+        start_url: `${process.env.PATH_PREFIX}/en`,
         display: 'standalone',
         background_color: '#fafafa',
         theme_color: '#1a73e8',
@@ -62,11 +65,11 @@ module.exports = {
         crossOrigin: `use-credentials`,
         localize: [
           {
-            start_url: `/iblis-gatsby-starter/fr/`,
-            lang: `fr`,
             name: `Modèle pour démarrer avec Gatsby`,
             short_name: `Iblis`,
             description: `Modèle pour démarrer avec Gatsby`,
+            lang: `fr`,
+            start_url: `${process.env.PATH_PREFIX}/fr`,
           },
         ],
       },
@@ -78,8 +81,8 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
     },
   ],
-  pathPrefix: process.env.PATH_PREFIX || `/iblis-gatsby-starter`,
+  pathPrefix: pathPrefix,
   siteMetadata: {
-    siteUrl: process.env.SITE_URL || `https://vdelacou.github.io/iblis-gatsby-starter`,
+    siteUrl: siteUrl,
   },
 };

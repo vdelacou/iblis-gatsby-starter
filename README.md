@@ -41,7 +41,7 @@ This will create all the robots.txt , sitemap, ect ...
 
 ```sh
 npm install
-export PATH_PREFIX='/'
+export PATH_PREFIX=''
 export SITE_URL='https://www.example.com'
 npm run build
 ```
