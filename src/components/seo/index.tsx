@@ -24,7 +24,7 @@ export const Seo: FunctionComponent<ISeoProps> = props => {
         },
         {
           property: `og:image`,
-          content: `${props.origin}${props.imgSrc}`,
+          content: `${props.imgSrc}`,
         },
         {
           property: `og:image:alt`,
@@ -40,7 +40,7 @@ export const Seo: FunctionComponent<ISeoProps> = props => {
         },
         {
           property: `og:url`,
-          content: `${props.href}`,
+          content: `${props.url}`,
         },
         {
           name: `twitter:card`,
@@ -52,7 +52,7 @@ export const Seo: FunctionComponent<ISeoProps> = props => {
         },
         {
           name: `twitter:image`,
-          content: `${props.origin}${props.imgSrc}`,
+          content: `${props.imgSrc}`,
         },
         {
           name: `twitter:description`,
@@ -85,15 +85,11 @@ interface ISeoProps {
    */
   keywords: string;
   /**
-   * Current page address
+   * The current page address
    */
-  origin: string;
+  url: string;
   /**
-   * Current site address
-   */
-  href: string;
-  /**
-   * social media pciture path
+   * social media pciture address
    */
   imgSrc: string;
 }

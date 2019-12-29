@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: `/iblis-gatsby-starter`,
   plugins: [
     {
       resolve: 'gatsby-plugin-typescript',
@@ -79,7 +78,8 @@ module.exports = {
       resolve: `gatsby-plugin-offline`,
     },
   ],
+  pathPrefix: process.env.PATH_PREFIX || `/iblis-gatsby-starter`,
   siteMetadata: {
-    siteUrl: `https://vdelacou.github.io/iblis-gatsby-starter/`,
+    siteUrl: process.env.SITE_URL || `https://vdelacou.github.io/iblis-gatsby-starter/`,
   },
 };

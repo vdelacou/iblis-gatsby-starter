@@ -12,16 +12,16 @@ const PageNotFound: FunctionComponent<PageRendererProps> = props => {
   const intl = useIntl();
   const imageSocial = useGetSocialImage();
   const siteMetadata = useSiteMetadata();
+  const siteUrl = new URL(siteMetadata.siteUrl);
   return (
     <Fragment>
       <Seo
         lang={intl.locale}
-        title={intl.formatMessage({ id: 'pages.index.seo.title' })}
-        description={intl.formatMessage({ id: 'pages.index.seo.description' })}
-        keywords={intl.formatMessage({ id: 'pages.index.seo.keywords' })}
-        origin={siteMetadata.siteUrl}
-        href={`${siteMetadata.siteUrl}${props.location.pathname}`}
-        imgSrc={imageSocial.src}
+        title={intl.formatMessage({ id: 'pages.404.seo.title' })}
+        description={intl.formatMessage({ id: 'pages.404.seo.description' })}
+        keywords={intl.formatMessage({ id: 'pages.404.seo.keywords' })}
+        url={`${siteUrl.origin}${props.location.pathname}`}
+        imgSrc={`${siteMetadata.siteUrl}${imageSocial.src}`}
       />
       <Box py={6}>
         <Container maxWidth="sm">

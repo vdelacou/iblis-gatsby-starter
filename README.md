@@ -44,10 +44,19 @@ npm install
 npm run build
 ```
 
+## Change the value according to your environnement
+
+```sh
+export PATH_PREFIX='/'
+export SITE_URL='https://www.example.com'
+```
+
 ## How to build for the github demo
 
 ```sh
 npm install
+export PATH_PREFIX='/iblis-gatsby-starter'
+export SITE_URL='https://vdelacou.github.io/iblis-gatsby-starter/'
 rm -rvf public/* docs/* .cache/*
 gatsby build --prefix-paths
 mv public/* docs/

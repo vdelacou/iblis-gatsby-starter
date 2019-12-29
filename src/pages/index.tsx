@@ -11,6 +11,7 @@ const Index: FunctionComponent<PageRendererProps> = props => {
   const intl = useIntl();
   const imageSocial = useGetSocialImage();
   const siteMetadata = useSiteMetadata();
+  const siteUrl = new URL(siteMetadata.siteUrl);
   return (
     <Fragment>
       <Seo
@@ -18,9 +19,8 @@ const Index: FunctionComponent<PageRendererProps> = props => {
         title={intl.formatMessage({ id: 'pages.index.seo.title' })}
         description={intl.formatMessage({ id: 'pages.index.seo.description' })}
         keywords={intl.formatMessage({ id: 'pages.index.seo.keywords' })}
-        origin={siteMetadata.siteUrl}
-        href={`${siteMetadata.siteUrl}${props.location.pathname}`}
-        imgSrc={imageSocial.src}
+        url={`${siteUrl.origin}${props.location.pathname}`}
+        imgSrc={`${siteMetadata.siteUrl}${imageSocial.src}`}
       />
 
       <Box p={6}>
