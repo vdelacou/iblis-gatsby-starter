@@ -42,7 +42,7 @@ This will create all the robots.txt , sitemap, ect ...
 ```sh
 npm install
 export PATH_PREFIX=''
-export SITE_URL='https://www.example.com'
+export SITE_URL='https://www.example.com/'
 npm run build
 ```
 
@@ -50,8 +50,8 @@ npm run build
 
 ```sh
 npm install
-export PATH_PREFIX='/iblis-gatsby-starter'
-export SITE_URL='https://vdelacou.github.io/iblis-gatsby-starter'
+export PATH_PREFIX='iblis-gatsby-starter'
+export SITE_URL='https://vdelacou.github.io/iblis-gatsby-starter/'
 rm -rvf public/* docs/* .cache/*
 npm run build
 mv public/* docs/

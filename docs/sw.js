@@ -33,14 +33,14 @@ self.__precacheManifest = [
     "url": "commons-62636edaf7859f95c808.js"
   },
   {
-    "url": "app-5057c1f131fe5eddd85a.js"
+    "url": "app-ca630dd6408a187a7adb.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ceef87afc058962c4db9.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "89503bebd6302d812405b8ad9203dff2"
+    "revision": "77e3a2286167285bd4840683935e67ca"
   },
   {
     "url": "static/webfonts/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
@@ -53,11 +53,11 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "15347b621e60dd57fee8956dc45ec06d"
+    "revision": "970f6c1b25228e746b215b7b28a27d6d"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "afee7f18f8aaa7c98f632a4ed73ffe62"
+    "revision": "62ca9673be792a026670c8d8f37ddf2c"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -150,7 +150,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/iblis-gatsby-starter/app-5057c1f131fe5eddd85a.js`))) {
+  if (!resources || !(await caches.match(`/iblis-gatsby-starter/app-ca630dd6408a187a7adb.js`))) {
     return await fetch(event.request)
   }
 

@@ -1,5 +1,5 @@
 const pathPrefix = process.env.PATH_PREFIX || '';
-const siteUrl = process.env.SITE_URL || 'https://www.example.com';
+const siteUrl = process.env.SITE_URL || 'https://www.example.com/';
 
 module.exports = {
   plugins: [
@@ -57,6 +57,7 @@ module.exports = {
         short_name: 'Iblis',
         description: 'Template Starter for Gatsby',
         lang: 'en',
+        start_url: `${siteUrl}`,
         display: 'standalone',
         background_color: '#fafafa',
         theme_color: '#1a73e8',
@@ -68,7 +69,7 @@ module.exports = {
             short_name: 'Iblis',
             description: 'Modèle pour démarrer avec Gatsby',
             lang: 'fr',
-            start_url: `${process.env.PATH_PREFIX}/fr`,
+            start_url: `${siteUrl}fr`,
           },
         ],
       },
