@@ -57,7 +57,7 @@ module.exports = {
         short_name: 'Iblis',
         description: 'Template Starter for Gatsby',
         lang: 'en',
-        start_url: `${process.env.PATH_PREFIX}/en`,
+        start_url: '/en',
         display: 'standalone',
         background_color: '#fafafa',
         theme_color: '#1a73e8',
