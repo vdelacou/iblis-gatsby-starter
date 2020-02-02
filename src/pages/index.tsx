@@ -1,6 +1,6 @@
 import { Container, Typography } from '@material-ui/core';
 import { PageRendererProps } from 'gatsby';
-import React, { Fragment, FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import { useIntl } from 'react-intl';
 import { Box } from '../components/box';
 import { Seo } from '../components/seo';
@@ -12,7 +12,7 @@ const Index: FunctionComponent<PageRendererProps> = props => {
   const imageSocial = useGetSocialImage();
   const siteMetadata = useSiteMetadata();
   return (
-    <Fragment>
+    <>
       <Seo
         lang={intl.locale}
         title={intl.formatMessage({ id: 'pages.index.seo.title' })}
@@ -24,10 +24,10 @@ const Index: FunctionComponent<PageRendererProps> = props => {
 
       <Box p={6}>
         <Container maxWidth="sm">
-          <Typography variant={'h1'}>{intl.formatMessage({ id: 'pages.index.title' })}</Typography>
+          <Typography variant="h1">{intl.formatMessage({ id: 'pages.index.title' })}</Typography>
         </Container>
       </Box>
-    </Fragment>
+    </>
   );
 };
 

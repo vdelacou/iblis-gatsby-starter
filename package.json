@@ -4,18 +4,20 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/system": "^4.9.1",
     "gatsby": "latest",
     "iblis-react-undraw": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest",
+    "react-intl": "^3.11.0",
     "styled-components": "latest"
   },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "lint": "tslint src/**/*.ts* --project tsconfig.json"
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
   },
   "devDependencies": {
     "@types/node": "latest",
@@ -23,6 +25,17 @@
     "@types/react-dom": "latest",
     "@types/react-helmet": "latest",
     "@types/styled-components": "latest",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-typescript": "^6.3.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.2",
+    "eslint-plugin-react-hooks": "^1.7.0",
     "gatsby-image": "latest",
     "gatsby-plugin-i18n": "latest",
     "gatsby-plugin-intl": "latest",
@@ -38,13 +51,7 @@
     "gatsby-theme-material-ui": "latest",
     "gatsby-transformer-sharp": "latest",
     "husky": "latest",
-    "tslint": "latest",
-    "tslint-config-prettier": "latest",
-    "tslint-config-standard": "latest",
-    "tslint-etc": "latest",
-    "tslint-react": "latest",
-    "tslint-react-hooks": "latest",
-    "tsutils": "latest",
+    "prettier": "^1.19.1",
     "typescript": "latest"
   },
   "husky": {

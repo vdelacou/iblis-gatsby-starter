@@ -1,6 +1,6 @@
 import { Container } from '@material-ui/core';
 import { PageRendererProps } from 'gatsby';
-import React, { Fragment, FunctionComponent } from 'react';
+import React, { FunctionComponent } from 'react';
 import { useIntl } from 'react-intl';
 import { Box } from '../components/box';
 import { NotFound } from '../components/not_found';
@@ -13,7 +13,7 @@ const PageNotFound: FunctionComponent<PageRendererProps> = props => {
   const imageSocial = useGetSocialImage();
   const siteMetadata = useSiteMetadata();
   return (
-    <Fragment>
+    <>
       <Seo
         lang={intl.locale}
         title={intl.formatMessage({ id: 'pages.404.seo.title' })}
@@ -24,12 +24,12 @@ const PageNotFound: FunctionComponent<PageRendererProps> = props => {
       />
       <Box py={6}>
         <Container maxWidth="sm">
-          <Box justifyContent={'center'} py={6}>
+          <Box justifyContent="center" py={6}>
             <NotFound />
           </Box>
         </Container>
       </Box>
-    </Fragment>
+    </>
   );
 };
 

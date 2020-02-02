@@ -1,19 +1,19 @@
 {
-    "pages": {
-        "index": {
-            "seo": {
-                "title": "Iblis Gatsby - Home",
-                "description": "Template Starter for Gatsby",
-                "keywords": "Gatsby, Template, Theme, Typescript, Material-UI, I18n, Undraw"
-            },
-            "title": "Welcome"
-        },
-        "404": {
-            "seo": {
-                "title": "Iblis Gatsby - Not Found",
-                "description": "Page not Found",
-                "keywords": "Not found, Gatsby, Template, Theme, Typescript, Material-UI, I18n, Undraw"
-            }
-        }
+  "pages": {
+    "index": {
+      "seo": {
+        "title": "Iblis Gatsby - Home",
+        "description": "Template Starter for Gatsby",
+        "keywords": "Gatsby, Template, Theme, Typescript, Material-UI, I18n, Undraw"
+      },
+      "title": "Welcome"
+    },
+    "404": {
+      "seo": {
+        "title": "Iblis Gatsby - Not Found",
+        "description": "Page not Found",
+        "keywords": "Not found, Gatsby, Template, Theme, Typescript, Material-UI, I18n, Undraw"
+      }
     }
+  }
 }

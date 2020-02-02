@@ -1,19 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-interface IImageSharpFixed {
-  base64: string;
-  tracedSVG: string;
-  aspectRatio: string;
-  width: string;
-  height: string;
-  src: string;
-  srcSet: string;
-  srcWebp: string;
-  srcSetWebp: string;
-  originalName: string;
-}
-
-export const useGetSocialImage = (): IImageSharpFixed => {
+export const useGetSocialImage = (): ImageSharpFixed => {
   const { file } = useStaticQuery(
     graphql`
       query {
@@ -29,3 +16,16 @@ export const useGetSocialImage = (): IImageSharpFixed => {
   );
   return file.childImageSharp.fixed;
 };
+
+interface ImageSharpFixed {
+  base64: string;
+  tracedSVG: string;
+  aspectRatio: string;
+  width: string;
+  height: string;
+  src: string;
+  srcSet: string;
+  srcWebp: string;
+  srcSetWebp: string;
+  originalName: string;
+}

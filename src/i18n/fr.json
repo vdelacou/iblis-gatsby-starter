@@ -1,19 +1,19 @@
 {
-    "pages": {
-        "index": {
-            "seo": {
-                "title": "Iblis Gatsby - Accueil",
-                "description": "Modèle pour démarrer avec Gatsby",
-                "keywords": "Gatsby, Modèle, Theme, Typescript, Material-UI, I18n, Undraw"
-            },
-            "title": "Bienvenue"
-        },
-        "404": {
-            "seo": {
-                "title": "Iblis Gatsby - Page non trouvée",
-                "description": "Page non trouvée",
-                "keywords": "Non trouvée, Gatsby, Modèle, Theme, Typescript, Material-UI, I18n, Undraw"
-            }
-        }
+  "pages": {
+    "index": {
+      "seo": {
+        "title": "Iblis Gatsby - Accueil",
+        "description": "Modèle pour démarrer avec Gatsby",
+        "keywords": "Gatsby, Modèle, Theme, Typescript, Material-UI, I18n, Undraw"
+      },
+      "title": "Bienvenue"
+    },
+    "404": {
+      "seo": {
+        "title": "Iblis Gatsby - Page non trouvée",
+        "description": "Page non trouvée",
+        "keywords": "Non trouvée, Gatsby, Modèle, Theme, Typescript, Material-UI, I18n, Undraw"
+      }
     }
+  }
 }

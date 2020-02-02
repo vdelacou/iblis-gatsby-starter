@@ -4,62 +4,62 @@ import Helmet from 'react-helmet';
 /*
  * The Seo for each page
  */
-export const Seo: FunctionComponent<ISeoProps> = props => {
+export const Seo: FunctionComponent<SeoProps> = props => {
   return (
     <Helmet
       htmlAttributes={{ lang: props.lang }}
       title={props.title}
       meta={[
         {
-          name: `description`,
+          name: 'description',
           content: props.description,
         },
         {
-          property: `og:title`,
+          property: 'og:title',
           content: props.title,
         },
         {
-          property: `og:description`,
+          property: 'og:description',
           content: props.description,
         },
         {
-          property: `og:image`,
+          property: 'og:image',
           content: `${props.imgSrc}`,
         },
         {
-          property: `og:image:alt`,
+          property: 'og:image:alt',
           content: props.title,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: 'og:type',
+          content: 'website',
         },
         {
-          property: `og:locale`,
+          property: 'og:locale',
           content: `${props.lang}`,
         },
         {
-          property: `og:url`,
+          property: 'og:url',
           content: `${props.url}`,
         },
         {
-          name: `twitter:card`,
-          content: `summary_large_image`,
+          name: 'twitter:card',
+          content: 'summary_large_image',
         },
         {
-          name: `twitter:title`,
+          name: 'twitter:title',
           content: props.title,
         },
         {
-          name: `twitter:image`,
+          name: 'twitter:image',
           content: `${props.imgSrc}`,
         },
         {
-          name: `twitter:description`,
+          name: 'twitter:description',
           content: props.description,
         },
         {
-          name: `keywords`,
+          name: 'keywords',
           content: props.keywords,
         },
       ]}
@@ -67,7 +67,7 @@ export const Seo: FunctionComponent<ISeoProps> = props => {
   );
 };
 
-interface ISeoProps {
+interface SeoProps {
   /**
    * The current page lang
    */

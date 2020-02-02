@@ -1,5 +1,5 @@
-const pathPrefix = process.env.PATH_PREFIX || ``;
-const siteUrl=  process.env.SITE_URL || `https://www.example.com`;
+const pathPrefix = process.env.PATH_PREFIX || '';
+const siteUrl = process.env.SITE_URL || 'https://www.example.com';
 
 module.exports = {
   plugins: [
@@ -11,7 +11,7 @@ module.exports = {
       options: {
         stylesConfig: {
           disableAutoprefixing: true,
-          disableMinification: true
+          disableMinification: true,
         },
       },
     },
@@ -32,57 +32,57 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: `gatsby-plugin-intl`,
+      resolve: 'gatsby-plugin-intl',
       options: {
         path: `${__dirname}/src/i18n`,
-        languages: [`en`, `fr`],
-        defaultLanguage: `en`,
+        languages: ['en', 'fr'],
+        defaultLanguage: 'en',
         redirect: true,
       },
     },
     {
-      resolve: `gatsby-plugin-sitemap`,
+      resolve: 'gatsby-plugin-sitemap',
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Iblis Gatsby Starter`,
-        short_name: `Iblis`,
-        description: `Template Starter for Gatsby`,
-        lang: `en`,
+        name: 'Iblis Gatsby Starter',
+        short_name: 'Iblis',
+        description: 'Template Starter for Gatsby',
+        lang: 'en',
         start_url: `${process.env.PATH_PREFIX}/en`,
         display: 'standalone',
         background_color: '#fafafa',
         theme_color: '#1a73e8',
-        icon: `src/images/gatsby-icon.png`,
-        crossOrigin: `use-credentials`,
+        icon: 'src/images/gatsby-icon.png',
+        crossOrigin: 'use-credentials',
         localize: [
           {
-            name: `Modèle pour démarrer avec Gatsby`,
-            short_name: `Iblis`,
-            description: `Modèle pour démarrer avec Gatsby`,
-            lang: `fr`,
+            name: 'Modèle pour démarrer avec Gatsby',
+            short_name: 'Iblis',
+            description: 'Modèle pour démarrer avec Gatsby',
+            lang: 'fr',
             start_url: `${process.env.PATH_PREFIX}/fr`,
           },
         ],
       },
     },
     {
-      resolve: `gatsby-plugin-robots-txt`,
+      resolve: 'gatsby-plugin-robots-txt',
     },
     {
-      resolve: `gatsby-plugin-offline`,
+      resolve: 'gatsby-plugin-offline',
     },
   ],
-  pathPrefix: pathPrefix,
+  pathPrefix,
   siteMetadata: {
-    siteUrl: siteUrl,
+    siteUrl,
   },
 };

@@ -9,8 +9,8 @@ export const NotFound: FunctionComponent = () => {
   const theme = useTheme();
 
   return (
-    <Grid container={true} alignItems="center" justify="center">
-      <Grid item={true} xs={10}>
+    <Grid container alignItems="center" justify="center">
+      <Grid item xs={10}>
         <SvgPageNotFound primarycolor={theme.palette.primary.main} height={theme.spacing(25)} />
       </Grid>
     </Grid>

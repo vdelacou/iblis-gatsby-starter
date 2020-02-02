@@ -1,23 +1,5 @@
-import {
-  borders,
-  BordersProps,
-  display,
-  DisplayProps,
-  flexbox,
-  FlexboxProps,
-  palette,
-  PaletteProps,
-  positions,
-  PositionsProps,
-  shadows,
-  ShadowsProps,
-  sizing,
-  SizingProps,
-  spacing,
-  SpacingProps,
-  typography,
-  TypographyProps,
-} from '@material-ui/system';
+// eslint-disable-next-line prettier/prettier
+import { borders, BordersProps, display, DisplayProps, flexbox, FlexboxProps, palette, PaletteProps, positions, PositionsProps, shadows, ShadowsProps, sizing, SizingProps, spacing, SpacingProps, typography, TypographyProps } from '@material-ui/system';
 import styled from 'styled-components';
 
 /*
