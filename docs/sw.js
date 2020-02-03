@@ -27,20 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-e7df643b6c46893625ac.js"
+    "url": "webpack-runtime-e3b5bcc7a33fd8e85c8c.js"
   },
   {
-    "url": "commons-62636edaf7859f95c808.js"
+    "url": "commons-487d38bec414ba5177c2.js"
   },
   {
-    "url": "app-a91867fc314ced4271c5.js"
+    "url": "app-65aa9bf57bfc9d196bd3.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ceef87afc058962c4db9.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "6cf26d23a004409492cebe1b27ad7f1a"
+    "revision": "324ebe3268a6f70c091a55ac08dfbc85"
   },
   {
     "url": "static/webfonts/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
@@ -150,7 +150,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/iblis-gatsby-starter/app-a91867fc314ced4271c5.js`))) {
+  if (!resources || !(await caches.match(`/iblis-gatsby-starter/app-65aa9bf57bfc9d196bd3.js`))) {
     return await fetch(event.request)
   }
 

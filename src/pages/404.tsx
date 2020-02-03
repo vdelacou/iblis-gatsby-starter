@@ -1,8 +1,7 @@
-import { Container } from '@material-ui/core';
+import { Box, Container, CssBaseline } from '@material-ui/core';
 import { PageRendererProps } from 'gatsby';
 import React, { FunctionComponent } from 'react';
 import { useIntl } from 'react-intl';
-import { Box } from '../components/box';
 import { NotFound } from '../components/not_found';
 import { Seo } from '../components/seo';
 import { useGetSocialImage } from '../hooks/images';
@@ -22,6 +21,7 @@ const PageNotFound: FunctionComponent<PageRendererProps> = props => {
         url={`${siteMetadata.origin}${props.location.pathname}`}
         imgSrc={`${siteMetadata.origin}${imageSocial.src}`}
       />
+      <CssBaseline />
       <Box py={6}>
         <Container maxWidth="sm">
           <Box justifyContent="center" py={6}>

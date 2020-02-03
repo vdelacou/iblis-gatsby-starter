@@ -11,8 +11,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest",
-    "react-intl": "latest",
-    "styled-components": "latest"
+    "react-intl": "latest"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -25,7 +24,6 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/react-helmet": "latest",
-    "@types/styled-components": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "eslint": "latest",

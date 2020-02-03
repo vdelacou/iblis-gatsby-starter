@@ -5,7 +5,7 @@ export const useGetSocialImage = (): FixedObject => {
   const { file } = useStaticQuery(
     graphql`
       query {
-        file(relativePath: { eq: "social_image.png" }) {
+        file(relativePath: { eq: "gatsby-astronaut.png" }) {
           childImageSharp {
             fixed(width: 1200, height: 630) {
               ...GatsbyImageSharpFixed_withWebp

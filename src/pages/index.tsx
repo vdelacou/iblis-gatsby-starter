@@ -1,8 +1,7 @@
-import { Container, Typography } from '@material-ui/core';
+import { Box, Container, CssBaseline, Typography } from '@material-ui/core';
 import { PageRendererProps } from 'gatsby';
 import React, { FunctionComponent } from 'react';
 import { useIntl } from 'react-intl';
-import { Box } from '../components/box';
 import { Seo } from '../components/seo';
 import { useGetSocialImage } from '../hooks/images';
 import { useSiteMetadata } from '../hooks/site_metadata';
@@ -21,7 +20,7 @@ const Index: FunctionComponent<PageRendererProps> = props => {
         url={`${siteMetadata.origin}${props.location.pathname}`}
         imgSrc={`${siteMetadata.origin}${imageSocial.src}`}
       />
-
+      <CssBaseline />
       <Box p={6}>
         <Container maxWidth="sm">
           <Typography variant="h1">{intl.formatMessage({ id: 'pages.index.title' })}</Typography>
