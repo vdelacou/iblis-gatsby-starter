@@ -1,15 +1,16 @@
 import { Box, Container, CssBaseline, Typography } from '@material-ui/core';
 import { PageRendererProps } from 'gatsby';
-import React, { FunctionComponent } from 'react';
-import { useIntl } from 'react-intl';
+import { useIntl } from 'gatsby-plugin-intl';
+import React, { FC } from 'react';
 import { Seo } from '../components/seo';
 import { useGetSocialImage } from '../hooks/images';
 import { useSiteMetadata } from '../hooks/site_metadata';
 
-const Index: FunctionComponent<PageRendererProps> = props => {
+const Page: FC<PageRendererProps> = (props) => {
   const intl = useIntl();
   const imageSocial = useGetSocialImage();
   const siteMetadata = useSiteMetadata();
+
   return (
     <>
       <Seo
@@ -30,4 +31,4 @@ const Index: FunctionComponent<PageRendererProps> = props => {
   );
 };
 
-export default Index;
+export default Page;

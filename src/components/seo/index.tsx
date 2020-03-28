@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 /*
  * The Seo for each page
  */
-export const Seo: FunctionComponent<SeoProps> = props => {
+export const Seo: FunctionComponent<SeoProps> = (props) => {
   return (
     <Helmet
       htmlAttributes={{ lang: props.lang }}

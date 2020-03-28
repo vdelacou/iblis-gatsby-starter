@@ -8,12 +8,6 @@ module.exports = {
     },
     {
       resolve: 'gatsby-theme-material-ui',
-      options: {
-        stylesConfig: {
-          disableAutoprefixing: true,
-          disableMinification: true,
-        },
-      },
     },
     {
       resolve: 'gatsby-transformer-sharp',
@@ -51,6 +45,9 @@ module.exports = {
       resolve: 'gatsby-plugin-sitemap',
     },
     {
+      resolve: 'gatsby-plugin-robots-txt',
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Iblis Gatsby Starter',
@@ -73,9 +70,6 @@ module.exports = {
           },
         ],
       },
-    },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
     },
     {
       resolve: 'gatsby-plugin-offline',

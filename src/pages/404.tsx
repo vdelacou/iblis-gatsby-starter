@@ -1,16 +1,17 @@
 import { Box, Container, CssBaseline } from '@material-ui/core';
 import { PageRendererProps } from 'gatsby';
-import React, { FunctionComponent } from 'react';
-import { useIntl } from 'react-intl';
+import { useIntl } from 'gatsby-plugin-intl';
+import React, { FC } from 'react';
 import { NotFound } from '../components/not_found';
 import { Seo } from '../components/seo';
 import { useGetSocialImage } from '../hooks/images';
 import { useSiteMetadata } from '../hooks/site_metadata';
 
-const PageNotFound: FunctionComponent<PageRendererProps> = props => {
+const Page: FC<PageRendererProps> = (props) => {
   const intl = useIntl();
   const imageSocial = useGetSocialImage();
   const siteMetadata = useSiteMetadata();
+
   return (
     <>
       <Seo
@@ -33,4 +34,4 @@ const PageNotFound: FunctionComponent<PageRendererProps> = props => {
   );
 };
 
-export default PageNotFound;
+export default Page;
