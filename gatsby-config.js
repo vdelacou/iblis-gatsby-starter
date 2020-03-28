@@ -4,6 +4,9 @@ const siteUrl = process.env.SITE_URL || 'https://www.example.com/';
 module.exports = {
   plugins: [
     {
+      resolve: 'gatsby-plugin-offline',
+    },
+    {
       resolve: 'gatsby-plugin-typescript',
     },
     {
@@ -70,9 +73,6 @@ module.exports = {
           },
         ],
       },
-    },
-    {
-      resolve: 'gatsby-plugin-offline',
     },
   ],
   pathPrefix,
