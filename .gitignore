@@ -67,3 +67,13 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# config
+.vscode/
+.editorconfig
+.eslintignore
+.eslintrc.json
+.prettierignore
+.prettierrc
+package.json
+package-lock.json
