@@ -27,8 +27,48 @@ After some search, I didn't find any starter or theme which has the following re
 
 ## Dev
 
-Download the example or clone the repo
-Install the library and the dependencies to your React project
+`npm install -g gatsby-cli`
+
+`npm init private`
+
+Follow the inscrution here at `Setup prettier`
+
+https://gist.github.com/vdelacou/58484f1c11af70aaa457f4e5c289e893#file-readme-md
+
+Add the `tsconfig.json`
+
+`curl -o tsconfig.json https://raw.githubusercontent.com/vdelacou/iblis-gatsby-starter/master/tsconfig.json`
+
+`npm install @material-ui/core gatsby gatsby-image gatsby-plugin-intl iblis-react-undraw react react-dom react-helmet`
+
+`npm install --save-dev @types/node @types/react @types/react-dom @types/react-helmet gatsby-plugin-manifest gatsby-plugin-nprogress gatsby-plugin-offline gatsby-plugin-react-helmet gatsby-plugin-robots-txt gatsby-plugin-sharp gatsby-plugin-sitemap gatsby-source-filesystem gatsby-theme-material-ui gatsby-transformer-sharp typescript`
+
+Add the `gatsby-config.js`
+
+`curl -o gatsby-config.js https://raw.githubusercontent.com/vdelacou/iblis-gatsby-starter/master/gatsby-config.js`
+
+Add the `.gitignore`
+
+`curl -o .gitignore https://raw.githubusercontent.com/vdelacou/iblis-gatsby-starter/master/.gatsby_gitignore`
+
+Copy the code to your src folder
+
+`mkdir src`
+
+`curl https://codeload.github.com/vdelacou/iblis-gatsby-starter/tar.gz/master | tar -xz --strip=1 iblis-gatsby-starter-master/src`
+
+Add the script to `package.json`
+
+```
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+  },
+```
 
 ```sh
 npm install
@@ -52,7 +92,7 @@ npm run build
 npm install
 export PATH_PREFIX='iblis-gatsby-starter'
 export SITE_URL='https://vdelacou.github.io/iblis-gatsby-starter/'
-rm -rvf public/* docs/* .cache/*
+npm run clean
 npm run build
 mv public/* docs/
 ```

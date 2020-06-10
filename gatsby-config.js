@@ -7,9 +7,6 @@ module.exports = {
       resolve: 'gatsby-plugin-offline',
     },
     {
-      resolve: 'gatsby-plugin-typescript',
-    },
-    {
       resolve: 'gatsby-theme-material-ui',
     },
     {
